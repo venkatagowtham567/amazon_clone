@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#fff;
+        }
+        .logo{
+            text-align:center;
+            margin-top:20px;
+        }
+        .logo img{
+            width:110px;
+        }
+        .form-container{
+            width:350px;
+            margin:20px auto;
+            border:1px solid #ddd;
+            padding:20px;
+            border-radius:4px;
+        }
+
+        h2{
+            font-weight:400;
+            margin-bottom:15px;
+        }
+
+        label{
+            font-size:13px;
+            font-weight:bold;
+        }
+
+        .form-field{
+            margin-top:10px;
+        }
+
+        .input-field input{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+            border:1px solid #a6a6a6;
+            border-radius:3px;
+            outline:none;
+        }
+
+        .input-field input:focus{
+            border-color:#e77600;
+            box-shadow:0 0 3px #e77600;
+        }
+
+        .forgot{
+            text-align:right;
+            font-size:12px;
+            margin-top:5px;
+        }
+
+        a{
+            text-decoration:none;
+            color:#0066c0;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+        .login button{
+            width:100%;
+            padding:8px;
+            margin-top:15px;
+            background:#f0c14b;
+            border:1px solid #a88734;
+            border-radius:3px;
+            cursor:pointer;
+        }
+
+        .login button:hover{
+            background:#e2b33c;
+        }
+        .info{
+            font-size:12px;
+            margin-top:15px;
+        }
+
+        .divider{
+            text-align:center;
+            margin:25px 0 10px;
+            font-size:12px;
+            color:#767676;
+            position:relative;
+        }
+
+        .divider::before,
+        .divider::after{
+            content:"";
+            height:1px;
+            width:30%;
+            background:#ddd;
+            position:absolute;
+            top:50%;
+        }
+
+        .divider::before{ left:0; }
+        .divider::after{ right:0; }
+
+        .signup button{
+            width:100%;
+            padding:8px;
+            background:#e7e9ec;
+            border:1px solid #adb1b8;
+            border-radius:3px;
+            cursor:pointer;
+        }
+
+        .signup button:hover{
+            background:#d7d9dc;
+        }
+
+        .footer{
+            text-align:center;
+            font-size:11px;
+            margin-top:30px;
+            color:#555;
+        }
+
+        .footer a{
+            margin:0 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+    </div>
+
+    <form class="form-container">
+        <h2>Sign-in</h2>
+
+        <div class="form-field">
+            <label>Email or mobile phone number</label>
+            <div class="input-field">
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Password</label>
+            <div class="forgot">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="input-field">
+                <input type="password">
+            </div>
+        </div>
+
+        <div class="login">
+            <button>Sign in</button>
+        </div>
+
+        <p class="info">
+            By continuing, you agree to Amazon's 
+            <a href="#">Conditions of Use</a> and 
+            <a href="#">Privacy Notice</a>.
+        </p>
+
+        <div class="divider">New to Amazon?</div>
+
+        <div class="signup">
+            <button>Create your Amazon account</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Help</a>
+        <p>© 1996–2025, Amazon.com, Inc. or its affiliates</p>
+    </div>
+
+</body>
+</html>
